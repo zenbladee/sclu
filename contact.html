@@ -3,9 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact | SCLU</title>
-    <meta name="description" content="Current Campaigns of the Students' Civil Liberties Union: Detention Free San Diego, Say no to surveillance, 
-        Blind Snakes Disability Justice.">
+    <title>Get Involved | SCLU</title>
+    <meta name="description" content="Join the Student's Civil Liberties Union (SCLU)!">
 </head>
 <body>
     <header>
@@ -48,7 +47,25 @@
                 <a href="mailto:sclu.sd@proton.me">sclu.sd@proton.me</a><br>
                 <a href="https://www.instagram.com/sclu.SD/">Instagram</a>
             </address>
-            <form action="" method="post">
+            <!--Form is currently invalid keep this in mind-->
+            <form action="YOUR-FORM" method="post"> 
+                <p>
+                    <label for="name">Name <span aria-hidden="true">*</span></label><br>
+                    <input id="name" name="name" type="text" placeholder="John Doe" autocomplete="name" required>
+                </p>
+                <p>
+                    <label for="email">Email address <span aria-hidden="true">*</span></label><br>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="phone">Phone number</label><br>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel">
+                </p>
+                <p><small>* required</small></p>
+                <p>
+                    <label for="message">Message <span aria-hidden="true">*</span></label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
                 <button type="submit">Send</button>
             </form>
         </section>
