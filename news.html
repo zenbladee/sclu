@@ -3,111 +3,195 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>News | SCLU</title>
-    <meta name="description" content="New about Students' Civil Liberties Union (SCLU)">
+    
+    <meta name="description" content="Read the latest news and media coverage about Students' Civil Liberties Union (SCLU)">
+
+    <meta name="theme-color" content="#173B35">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Primary">
-            <ul>
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Primary Navigation">
+            <a class="site-logo" href="index.html">
+                SCLU
+            </a>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="campaigns.html">Campaigns</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="news.html">News</a></li> <!--Announcements & Press-->
                 <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Get Involved</a></li> <!--Join, Contact Us, Schedule-->
-                <li><a href="https://www.zeffy.com/en-US/donation-form/donate-to-empower-youth-organizing-in-san-diego-2">Donate Now</a></li>
+                <li><a href="contact.html">Get Involved</a></li> <!--Recruitment, Contact Us, Schedule-->
+                <li><a class="donate-btn" href="https://www.zeffy.com/en-US/donation-form/donate-to-empower-youth-organizing-in-san-diego-2">Donate Now</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <h1>News</h1>
         
-        <section id="announcements">
-            <h2>Announcements</h2>
+        <section id="announcements" aria-labelledby="announcements-heading">
+            <h2 id="announcements-heading">Announcements</h2>
             <article class="card">
                 <h3>Announcement Title</h3>
-                <p><time datetime="2026-11-16">Novemeber 16, 2026</time></p>
+                <p><time datetime="2026-11-16">November 16, 2026</time></p>
                 <p>Announcement Text.</p>
             </article>
         </section>
 
-        <section id="press">
-            <h2>Press</h2>
-            <ul class="card-box">
-                <li>
-                    <article class="card">
-                        <h3><a href="URL-HERE">A California university is cutting ties with the Border Patrol</a></h3>
-                        <p>Phoebe Huss</p>
-                        <p>CalMatters, <time datetime="2026-07-31">July 31, 2026</time></p>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <h3><a href="URL-HERE">Betty Yee connects with young voters at UC San Diego</a></h3>
-                        <p>Chris Ponce</p>
-                        <p>Fox 5/KUSI, <time datetime="2026-04-09">April 9, 2026</time></p>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <h3><a href="URL-HERE">Student organizations denounce ICE activity, push for more… <!-- TODO: full title --></a></h3>
-                        <p>Brittany Cruz-Fejeran</p>
-                        <p>Daylight San Diego, <time datetime="2026-01-18">January 18, 2026</time></p>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <h3><a href="URL-HERE">Student activists speak out against ICE</a></h3>
-                        <p>Fox 5/KUSI</p>
-                        <p>Fox 5 News San Diego, <time datetime="2026-01-13">January 13, 2026</time></p>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <h3><a href="URL-HERE">Students Rally for Immigrant Safety</a></h3>
-                        <p>KFMB-SD</p>
-                        <p>CBS 8 News, <time datetime="2026-01-13">January 13, 2026</time></p>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <h3><a href="URL-HERE">'Suffering in silence:' Advocates shed light on immigration… <!-- TODO: full title --></a></h3>
-                        <p>Maya Srikrishnan</p>
-                        <p>Daylight San Diego, <time datetime="2025-10-03">October 3, 2025</time></p>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <h3><a href="URL-HERE">US will pay price for booting international students out of UCSD</a></h3>
-                        <p>UT Readers</p>
-                        <p>San Diego Union-Tribune, <time datetime="2025-04-21">April 21, 2025</time></p>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <h3><a href="URL-HERE">UPDATE: UCSD says 35 international students' F-1 visas revoke… <!-- TODO: full title --></a></h3>
-                        <p>Jane Kim</p>
-                        <p>ABC 10 News San Diego, <time datetime="2025-04-18">April 18, 2025</time></p>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <h3><a href="URL-HERE">So far, 35 UCSD students' F-1 visas revoked, one deport… <!-- TODO: full title --></a></h3>
-                        <p>Jane Kim</p>
-                        <p>ABC 10 News San Diego, <time datetime="2025-04-17">April 17, 2025</time></p>
-                    </article>
-                </li>
-            </ul>
+        <section class="news-section" aria-labelledby="news-heading">
+            <div class="section-heading">
+                <p class="eyebrow">IN THE NEWS</p>
+                <h2 id="news-heading">Recent Headlines</h2>
+            </div>
+
+            <div class="card-box">
+                <article class="news-card">
+                    <p class="article-source">CalMatters</p>
+                    <h3>
+                        A California University is Cutting Ties with the Border Patrol
+                    </h3>
+
+                    <p class="article-author">
+                        By Phoebe Huss
+                    </p>
+
+                    <a href="https://calmatters.org/education/2026/07/uc-san-diego-homeland-security-border-patrol-students-protest/">
+                        Read Here
+                    </a>
+                </article>
+                <article class="news-card">
+                    <p class="article-source">Fox 5/KUSI</p>
+                    <h3>
+                        Betty Yee connects with young voters at UC San Diego
+                    </h3>
+
+                    <p class="article-author">
+                        By Chris Ponce
+                    </p>
+
+                    <a href="https://fox5sandiego.com/news/politics/betty-yee-san-diego/">
+                        Read Here
+                    </a>
+                </article>
+                <article class="news-card">
+                    <p class="article-source">Daylight San Diego</p>
+                    <h3>
+                        Student Organizations Denounce Ice Activity, push for more...
+                    </h3>
+
+                    <p class="article-author">
+                        By Brittany Cruz-Fejeran
+                    </p>
+
+                    <a href="https://www.daylightsandiego.org/student-organizations-denounce-ice-activity-push-for-more-action-from-local-governments/">
+                        Read Here
+                    </a>
+                </article>
+                <article class="news-card">
+                    <p class="article-source">Fox5 News San Diego</p>
+                    <h3>
+                        Student Activists Speak Out Against ICE
+                    </h3>
+
+                    <p class="article-author">
+                        By Fox 5/KUSI
+                    </p>
+
+                    <a href="https://fox5sandiego.com/video/student-activists-speak-out-against-ice/11424577/">
+                        Read Here
+                    </a>
+                </article>
+                <article class="news-card">
+                    <p class="article-source">CBS 8 News</p>
+                    <h3>
+                        Students Rally for Immigrant Safety
+                    </h3>
+
+                    <p class="article-author">
+                        By KFMB-SD
+                    </p>
+
+                    <a href="https://www.youtube.com/watch?v=Ky66xm2nGic">
+                        Read Here
+                    </a>
+                </article>
+                <article class="news-card">
+                    <p class="article-source">Daylight San Diego</p>
+                    <h3>
+                        'Suffering in Silence:' Advocates shed light on immigration...
+                    </h3>
+
+                    <p class="article-author">
+                        By Maya Srikrishnan
+                    </p>
+
+                    <a href="https://www.daylightsandiego.org/suffering-in-silence-advocates-shed-light-on-immigration-enforcements-impact-on-aapi-communities/">
+                        Read Here
+                    </a>
+                </article>
+                <article class="news-card">
+                    <p class="article-source">San Diego Union Tribune</p>
+                    <h3>
+                        US will pay price for booting international students out of UCSD
+                    </h3>
+
+                    <p class="article-author">
+                        By UT Readers
+                    </p>
+
+                    <a href="https://www.sandiegouniontribune.com/2025/04/21/u-s-will-pay-price-for-booting-international-students-out-of-ucsd/">
+                        Read Here
+                    </a>
+                </article>
+                <article class="news-card">
+                    <p class="article-source">ABC 10 News San Diego</p>
+                    <h3>
+                        UPDATE: UCSD says 35 international students' F-1 visas revoke...
+                    </h3>
+
+                    <p class="article-author">
+                        By Jane Kim
+                    </p>
+
+                    <a href="https://www.10news.com/news/local-news/san-diego-news/update-ucsd-says-35-international-students-f-1-visas-revoked-1-deported">
+                        Read Here
+                    </a>
+                </article>
+                <article class="news-card">
+                    <p class="article-source">ABC 10 News San Diego</p>
+                    <h3>
+                        So far, 35 UCSD students' F-1 visas revoked, one deport...
+                    </h3>
+
+                    <p class="article-author">
+                        By Jane Kim
+                    </p>
+
+                    <a href="https://www.10news.com/news/local-news/so-far-35-ucsd-students-f-1-visas-revoked-one-deported-at-the-border">
+                        Read Here
+                    </a>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="mailto:sclu.sd@proton.me">Email Us</a></li>
-            <li><a href="https://cal.com/students-civil-liberties-union/30min">Scheduling</a></li>
-            <li><a href="https://www.instagram.com/sclu.SD/">Instagram</a></li>
-            <li><p><small>&copy; 2026 Students' Civil Liberties Union</small></p></li>
-        </ul>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="mailto:sclu.sd@proton.me">Email Us</a></li>
+                <li><a href="https://cal.com/students-civil-liberties-union/30min">Schedule a Meeting</a></li>
+                <li><a href="https://www.instagram.com/sclu.SD/">Instagram</a></li>
+            </ul>
+        </nav>
+
+        <p>
+            <small>
+                &copy; 2026 Students' Civil Liberties Union.
+                All rights reserved.
+            </small>
+        </p>
     </footer>
 </body>
 </html>

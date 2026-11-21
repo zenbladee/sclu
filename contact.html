@@ -3,28 +3,39 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Get Involved | SCLU</title>
-    <meta name="description" content="Join the Student's Civil Liberties Union (SCLU)!">
+
+    <meta name="description" content="Get involved with the Students' Civil Liberties Union (SCLU).">
+
+    <meta name="theme-color" content="#173B35">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Primary">
-            <ul>
+    
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Primary Navigation">
+            <a class="site-logo" href="index.html">
+                SCLU
+            </a>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="campaigns.html">Campaigns</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="news.html">News</a></li> <!--Announcements & Press-->
                 <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Get Involved</a></li> <!--Join, Contact Us, Schedule-->
-                <li><a href="https://www.zeffy.com/en-US/donation-form/donate-to-empower-youth-organizing-in-san-diego-2">Donate Now</a></li>
+                <li><a href="contact.html">Get Involved</a></li> <!--Recruitment, Contact Us, Schedule-->
+                <li><a class="donate-btn" href="https://www.zeffy.com/en-US/donation-form/donate-to-empower-youth-organizing-in-san-diego-2">Donate Now</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main id="main-content">
         <h1>Get Involved</h1>
         
-        <section>
-            <h2>What Can You Do?</h2>
+        <section class="involvement" aria-labelledby="involvement-heading">
+            <h2 id="involvement-heading">What Can You Do?</h2>
             <p>
                 SCLU is a conscientiously inclusive organization that firmly believes that every passionate individual can be a strong advocate for community interests when pushed in the right direction. 
                 Our efforts require a wide range of skills and expertise. From data science (for our research wing) to economics (for our policy wing), visual arts (for our communications wing) to political science (for our organizing wing), we have and require a diverse range of individuals. 
@@ -32,38 +43,40 @@
             </p>
         </section>
 
-        
-        <section>
-            <h2>Do You Have Something For Us?</h2>
+        <iframe src="https://tally.so/embed/obq8GP?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" width="100%" height="600" title="Lead the Movement Leadership Application"></iframe>
+
+        <section class="collaboration" aria-labelledby="collaboration-heading">
+            <h2 id="collaboration-heading">Do You Have Something For Us?</h2>
             <p>
                 If you have an action, advocacy priority or other collaboration that you think it is imperative to discuss (or something else), we would love to talk to you! Reach out here for Scheduling a Meeting
             </p>
             <a href="https://cal.com/students-civil-liberties-union/30min">Schedule Now</a>
         </section>
 
-        <section>
-            <h2>Contact Us</h2>
+        <section class="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
             <address>
                 <a href="mailto:sclu.sd@proton.me">sclu.sd@proton.me</a><br>
                 <a href="https://www.instagram.com/sclu.SD/">Instagram</a>
             </address>
-            <!--Form is currently invalid keep this in mind-->
+
+            <!--Form is currently invalid keep this in mind for later!-->
             <form action="YOUR-FORM" method="post"> 
                 <p>
-                    <label for="name">Name <span aria-hidden="true">*</span></label><br>
+                    <label for="name">Name <span aria-hidden="true">*</span></label>
                     <input id="name" name="name" type="text" placeholder="John Doe" autocomplete="name" required>
                 </p>
                 <p>
-                    <label for="email">Email address <span aria-hidden="true">*</span></label><br>
+                    <label for="email">Email address <span aria-hidden="true">*</span></label>
                     <input id="email" name="email" type="email" autocomplete="email" required>
                 </p>
                 <p>
-                    <label for="phone">Phone number</label><br>
+                    <label for="phone">Phone number</label>
                     <input id="phone" name="phone" type="tel" autocomplete="tel">
                 </p>
                 <p><small>* required</small></p>
                 <p>
-                    <label for="message">Message <span aria-hidden="true">*</span></label><br>
+                    <label for="message">Message <span aria-hidden="true">*</span></label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </p>
                 <button type="submit">Send</button>
@@ -71,12 +84,19 @@
         </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="mailto:sclu.sd@proton.me">Email Us</a></li>
-            <li><a href="https://cal.com/students-civil-liberties-union/30min">Scheduling</a></li>
-            <li><a href="https://www.instagram.com/sclu.SD/">@sclu.sd on Instagram</a></li>
-            <li><p><small>&copy; 2026 Students' Civil Liberties Union</small></p></li>
-        </ul>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="mailto:sclu.sd@proton.me">Email Us</a></li>
+                <li><a href="https://cal.com/students-civil-liberties-union/30min">Schedule a Meeting</a></li>
+                <li><a href="https://www.instagram.com/sclu.SD/">Instagram</a></li>
+            </ul>
+        </nav>
+        <p>
+            <small>
+                &copy; 2026 Students' Civil Liberties Union.
+                All rights reserved.
+            </small>
+        </p>
     </footer>
 </body>
 </html>
