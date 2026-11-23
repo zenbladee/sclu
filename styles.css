@@ -269,6 +269,20 @@ img {
     border-radius: var(--border-radius);
 }
 
+/* WORK SECTION IMAGE */
+.work-image {
+    max-width: 1700px;
+    margin: 0 auto var(--spacing-large);
+}
+
+.work-image img {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+    object-position: center 70%;
+    border-radius: var(--border-radius);
+}
+
 /* WORK AND CAMPAIGN SECTIONS */
 
 .work-section,
@@ -537,5 +551,9 @@ a:focus-visible, button:focus-visible {
 
     .card, .campaign-card, .news-card {
         padding: var(--spacing-small);
+    }
+
+    .work image img {
+        height: 250px;
     }
 }

@@ -70,8 +70,11 @@
             </address>
 
             <!--Form is currently invalid keep this in mind for later!-->
-            <form action="YOUR-FORM" method="post"> 
+            <form action="mailto:sclu.sd@proton.me" method="post" enctype="text/plain">
                 <p>
+                    <label for="name">Name <span aria-hidden="true">*</span></label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+                </p>
                     <label for="name">Name <span aria-hidden="true">*</span></label>
                     <input id="name" name="name" type="text" placeholder="John Doe" autocomplete="name" required>
                 </p>
