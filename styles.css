@@ -19,7 +19,7 @@
     --font-size-xl: 40px;
     --font-size-large: 35px;
     --font-size-medium: 25px;
-    --font-size-small: 20px;
+    --font-size-small: 18px;
 
     /* Layout */
     --max-width: 2000px;
@@ -333,8 +333,13 @@ img {
 
 /* SHARED CARD STYLING */
 
-.card h2, .campaign-card h2 {
-    margin: 0 0 0 10px;
+.card h3, .campaign-card h3 {
+    font-size: 1.5rem;
+    margin: var(--spacing-small) 0;
+}
+
+.card p, .campaign-card p {
+    margin-top: 8px;
 }
 
 .card,
@@ -380,7 +385,7 @@ img {
 .campaign-card .button,
 .news-card .button,
 .get-invovled .button {
-    margin-top: var(--spacing-medium);
+    margin-top: auto;
     align-self: flex-start;
 }
 
