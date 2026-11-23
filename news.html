@@ -11,6 +11,7 @@
     <meta name="theme-color" content="#173B35">
 
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -18,14 +19,22 @@
             <a class="site-logo" href="index.html">
                 SCLU
             </a>
-            <ul class="nav-links">
+
+            <button
+                class="menu-toggle" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="campaigns.html">Campaigns</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="news.html">News</a></li> <!--Announcements & Press-->
                 <li><a href="team.html">Team</a></li>
                 <li><a href="contact.html">Get Involved</a></li> <!--Recruitment, Contact Us, Schedule-->
-                <li><a class="donate-btn" href="https://www.zeffy.com/en-US/donation-form/donate-to-empower-youth-organizing-in-san-diego-2">Donate Now</a></li>
+                <li><a class="donate-btn" href="https://www.zeffy.com/en-US/donation-form/donate-to-empower-youth-organizing-in-san-diego-2">Donate</a></li>
             </ul>
         </nav>
     </header>
