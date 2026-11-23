@@ -175,6 +175,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: var(--font-size-small);
+}
+
 /* Images */
 
 img {
@@ -221,7 +225,7 @@ img {
 }
 
 .hero-description {
-    font-size: var(--font-initial-size);
+    font-size: var(--font-size-small);
     line-height: 1.8;
     margin-bottom: var(--spacing-small);
     max-width: 800px;
