@@ -384,8 +384,7 @@ img {
 
 .card .button,
 .campaign-card .button,
-.news-card .button,
-.get-involved .button {
+.news-card .button {
     margin-top: auto;
     align-self: flex-start;
 }
