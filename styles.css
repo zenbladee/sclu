@@ -287,12 +287,13 @@ img {
     border-radius: var(--border-radius);
 }
 
-/* CAMPAIGN SECTION IMAGES FOR CARDS */
-.campaign-image {
+/* CAMPAIGN SECTION AND NEWSIMAGES FOR CARDS */
+.campaign-image, .news-image {
     width: 100%;
     height: 300px;
     
     object-fit: cover;
+    object-position: center;
     border-radius: var(--border-radius);
 }
 
@@ -333,12 +334,12 @@ img {
 
 /* SHARED CARD STYLING */
 
-.card h3, .campaign-card h3 {
+.card h3, .campaign-card h3, .news-card p {
     font-size: 1.5rem;
     margin: var(--spacing-small) 0;
 }
 
-.card p, .campaign-card p {
+.card p, .campaign-card p, .news-card p {
     margin-top: 8px;
 }
 
@@ -365,7 +366,7 @@ img {
 .news-card .article-source {
     font-size: 1.25rem;
     color: var(--gold);
-    margin: 0 0 10px;
+    margin: 10px 0 10px;
 }
 
 .news-card h3 {
@@ -414,10 +415,6 @@ img {
     outline: solid var(--gray-blue) 2px;
 }
 
-/* GALLERY */
-.gallery-section {
-    background-color: var(--gray-blue);
-}
 /* GET INVOLVED SECTION */
 .get-involved {
     display: flex;
@@ -426,16 +423,22 @@ img {
     text-align: center;
 
     padding: var(--spacing-xxx-large) 5%;
-    background-color: var(--background-color);
+    background-color: var(--gray-blue);
 }
 
 .get-involved h2 {
+    font-size: 3rem;
     margin: 0 0 var(--spacing-medium);
 }
 
 .get-involved p {
     max-width: 700px;
-    margin: 0 0 var(--spacing-medium);
+    margin: 0 0 var(--spacing-small);
+    line-height: 1.8
+}
+
+.get-involved .button {
+    margin-top: var(--spacing-small);
 }
 
 /* FOOTER */
@@ -501,8 +504,71 @@ a:focus-visible, button:focus-visible {
     .card-box {
         grid-template-columns: 1fr;
     }
+
+    .campaign-image, .news-image{
+        height: auto;
+    }
 }
 
+/* CAMPAIGN HTML */
+.page-intro {
+    padding: var(--spacing-xxx-large) 5%;
+}
+
+.page-intro-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-intro h1 {
+    margin: 0 0 var(--spacing-medium);
+    max-width: 650px;
+}
+
+.page-intro p {
+    max-width: 650px;
+    margin: 0;
+    line-height: 1.8;
+}
+
+
+.campaign-detail {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xx-large);
+
+    padding: var(--spacing-xxxx-large) 5%;
+}
+
+.campaign-detail.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE AND CONTENT */
+
+.campaign-media,
+.campaign-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.campaign-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+}
+
+.campaign-content h2 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-medium);
+}
+
+.campaign-content p {
+    line-height: 1.8;
+}
 
 @media (max-width: 768px) {
     .main-nav {
@@ -541,6 +607,17 @@ a:focus-visible, button:focus-visible {
         align-items: center;
         gap: var(--spacing-medium);
     }
+
+    .campaign-image, .news-image {
+        height: auto;
+    }
+
+    /* CAMPAIGN HTML */
+    .campaign-detail, .campaign-detail.reverse {
+        flex-direction: column;
+        align-items: stretch;
+        padding: var(--spacing-xx-large) 5%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -573,5 +650,9 @@ a:focus-visible, button:focus-visible {
 
     .work image img {
         height: 250px;
+    }
+
+    .campaign-image, .news-image{
+        height: auto;
     }
 }
