@@ -111,6 +111,72 @@ img {
     display: block;
 }
 
+
+/* ========================================
+   MARQUEE
+======================================== */
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--navy);
+    color: var(--butter-yellow);
+    border-top: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
+    padding: 18px 0;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee-group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: clamp(24px, 4vw, 60px);
+    padding-right: clamp(24px, 4vw, 60px);
+    white-space: nowrap;
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.marquee-star {
+    color: var(--gold);
+    font-size: 24px;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Accessibility: respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+        animation: none;
+    }
+
+    .marquee-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        white-space: normal;
+    }
+
+    .marquee-group[aria-hidden="true"] {
+        display: none;
+    }
+}
+
+
 /* ========================================
    5. NAVIGATION
 ======================================== */
